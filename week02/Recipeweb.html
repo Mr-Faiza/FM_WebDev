@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head> <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>ReRepe</title>
+  </head>
+<body>
+<h1 style="text-align:center;">Easy Homemade Gulab Jamun</h1>
+
+<!-- Style includes the stylying choices of the different section -->
+<!-- .name includes the different classes we created and the style we are assigning to them -->
+<style>
+    body 
+    {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* a:hover is when you hover over it */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    /* active is when you are on the page  */
+    .topnav a.active {
+      background-color: #37066a;
+      color: white;
+    }
+
+    /* Display:flex and justify content center makes the text center on the box. */
+    .subnav 
+    {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin: auto;
+            background: rgb(184, 175, 255);
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+        .subnav a
+        {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .main-container 
+        {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .content-wrapper 
+        {
+            display: flex;
+        }
+        .sidebar-container 
+        {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right: 20px;
+        }
+        .sidebar, aside 
+        {
+            padding: 20px;
+            background: #e6e6e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .sidebar h4, aside h5 
+        {
+            text-align: center;
+        }
+        .category 
+        {
+            padding: 10px;
+            background: #e6e6e6;
+            margin-bottom: 20px;
+        }
+        aside 
+        {
+            
+            background: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        article 
+        {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        img 
+        {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="topnav">
+            <a href="#recipes">Recipes</a>
+            <a href="#ingredients">Ingredients</a>  
+            <!-- The class="active" applies special styling to indicate that this link is currently active -->
+            <a class="active" href="#ocassions">Ocassions</a> 
+            <a href="#techniques">Techniques</a>
+    </nav>
+    <nav class="subnav">
+        <a href="#seasonal"> <strong> Seasonal </strong></a>
+        <a href="#gathering">Gathering</a>
+    </nav>
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="sidebar-container">
+                <div class="sidebar">
+                    <h4>Seasonal</h4>
+                    <ul>
+                        <li><a href="#lunarnewyear">Lunar New Year</a></li>
+                        <li><a href="#superbowl">Super Bowl</a></li>
+                        <li><a href="#valentines">Valentine's Day</a></li>
+                        <li><a href="#ramadan"> <strong> Ramadan </strong></a></li>
+                    </ul>
+                </div>
+                <!-- Aside tag is used to represent content that is indirectly related to the main content of the page. -->
+                <aside>
+                    <h4>Ramadan</h4>
+                    <p>Ramadan is the ninth month of the Islamic calendar, observed by Muslims worldwide as a month of fasting and community.</p>
+                    <figure>
+                        <img src="../Week02/Gulab Jamun pic.png" alt="Gulab Jamun">
+                    </figure>
+                </aside>
+            </div>
+<!-- Article is used for the main content of the page such as blogs etc.. -->
+    <article>
+        <h2>Easy Homemade Gulab Jamun</h2>
+        <p>Nothing beats the rich, syrupy delight of homemade Gulab Jamun. This classic dessert from the subcontinent is a go-to treat for Eid, special occasions, or whenever you’re craving something sweet.</p>
+        <h3>Ingredients Needed</h3>
+        <ul>
+            <li>Milk Powder</li>
+            <li>All Purpose Flour</li>
+            <li>Baking Powder</li>
+            <li>Egg</li>
+            <li>Ghee or Clarified Butter</li>
+            <li>Water</li>
+            <li>Sugar</li>
+            <li>Cardamom Pods</li>
+            <li>Oil for Frying</li>
+        </ul>     
+        <h3>How to make it?</h3>
+        <ol>
+            <li>Make the dough</li>
+            <li>Form balls</li>
+            <li>Fry the Gulab Jamun</li>
+            <li>Make the sugar syrup</li>
+            <li>Soak the Gulab Jamun overnight</li>
+            <li>Serve & Enjoy!</li>
+        </ol>
+    </article>
+    </body>
+    </html>
+    
