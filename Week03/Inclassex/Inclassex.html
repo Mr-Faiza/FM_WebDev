@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <!-- the viewport tag sets the initial scale and ensures
+     proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>HTML Boilerplate</title>
+    <!-- Load external style sheet before, interal style sheet will override -->
+    <!-- Internal Style sheet, only apply to this page -->
+    <style>
+        /* Universal Selector */
+        * { 
+            font-family:'Courier New', Courier, monospace;
+        }
+        /* Tag selector, apply these styles to all P tags unless over-written by another selector*/
+        p{ 
+            font-size:3rem; /* 3 x of the base font size */ 
+            font-family:cursive;
+            color: deeppink;
+
+        }
+        /* Class selectors can apply to any tags but we need to apply the class attribute */ 
+        .sillyText{
+            font-weight: 800;
+            color: #ff66bf;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: overline;
+            text-transform: uppercase;
+
+
+
+        }
+        #mostIm {
+            color: #ff66bf;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5px 10px 15px 20px; /* it will alter the margin Clock wise*/
+            text-shadow: 4px 4px 10px #ff66bf ; /* 4 values : X, Y, blur, color */
+            /* Rgba is RGB and Alpha -- Tranparency at the end.  */
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- everything inside the body tag shows up to the user unless
+     modified to not be visible with css -->
+
+    <!-- ONLY 1 H1 per page -->
+    <h1>Reasons of web dev</h1>
+    <p> Nicolas Cage has an oscar. WHY does he have an oscas ? We Don't Know !!! </p>
+    <p> He makes about 8 movies a year. 
+        <span class="sillyText"> At least, half of them are laughably watchable. </span>
+    </p>
+    <h2 id="#mostIm">He bought a stolen dinosour</h2>
+  </body>
+</html>

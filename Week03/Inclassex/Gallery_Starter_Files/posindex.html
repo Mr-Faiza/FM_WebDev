@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <!-- the viewport tag sets the initial scale and ensures
+     proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The title tag shows up in the browser tab and as the big blue link in search results -->
+    <title>Positioning</title>
+    <style type="text/css"> 
+    .abs_br{
+        width : 200px;
+        height: 200px;
+        background-color: blueviolet;
+        position: absolute;
+        bottom: 0px;
+        right:10px;
+    }
+    .rel_lt{
+        width : 200px;
+        height: 200px;
+        background-color: rgb(220, 14, 134);
+        position: relative;
+        top : 400px; 
+        left : 50%; 
+    }
+    .abs_child{
+        width:100px;
+        height:100px;
+        background-color: rgb(3, 125, 84);
+        bottom: 0;
+        left:300px;
+        position: absolute;
+
+    }
+    .rel_parent{
+        width:400px;
+        height:400px;
+        background-color: cadetblue;
+        position: relative;
+    }
+    .abs_parent{
+        width:600px;
+        height:600px;
+        background-color: blue;
+        position: absolute;
+        top:200px;
+        right:200px;
+
+    }
+
+    </style>
+
+    
+  </head>
+  <body>
+    <!-- when we posiyion an element absolute without declaring a position type for an parent element, abolsute positioning is based on the browser window -->
+    <div class="abs_br"></div>
+    <!-- when we position an element relative, without declaring a position type or an parent element, the element is positioned relative to where it was going to be anyway  -->
+    <div class="rel_lt"> </div>
+    <!-- everything inside the body tag shows up to the user unless
+     modified to not be visible with css -->
+<!-- when an abs position child element has an parent element with an defined position ( not static) the absolute bounds are in relation to the parent.  -->
+     <div class="rel_parent">
+        <div class="abs_child">
+
+        </div>
+     </div>
+     <!-- to change the layer of objs, use Z index. Ex: Z-index = -10; -->
+     <div class="abs_parent"> 
+        <div class="abs_child"> 
+
+        </div>
+     </div>
+    <!-- ONLY 1 H1 per page -->
+    <h1>Hello World!</h1>
+  </body>
+</html>

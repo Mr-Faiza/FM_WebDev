@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Navbar</title>
+
+    <style type="text/CSS">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            background-color: deepskyblue;
+            width: 100%;
+        }
+/* Looking for a nav tag with the ID on it and find the ul list inside of it. */
+        nav#main-nav ul{
+/* Remove all bullet point */
+           list-style-type: none;
+           overflow: hidden; 
+
+           /* Since this is an inline block, we need to zero-out the font size */
+
+
+        }
+        #main-nav ul li{
+            /* list items. Li display block by default, they take take 100% of the display */
+            display: inline-block;
+            font-size: 1rem;
+        }
+
+        li a{
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            /* remove the default link style */
+            text-decoration: none;
+            color: chartreuse;
+        }
+
+        li a:hover{
+            background-color: brown;
+            color: #ffff; 
+        }
+
+    </style>
+  </head>
+  <body>
+    <header> 
+        <nav id="main-nav">
+            <ul> 
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+  </body>
+</html>

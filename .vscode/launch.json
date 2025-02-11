@@ -7,7 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Open Week2Notes.html",
             "file": "c:\\Users\\faiza\\Downloads\\WebDev25\\FM_WebDev\\Homework\\index.html"
         }
     ]
