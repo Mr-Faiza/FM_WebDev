@@ -1,0 +1,194 @@
+/* GLOBAL STYLES */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* FLEXBOX SIMPLE ROW LAYOUTS */
+
+/* BASE STYLES  */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Some styles so we can see all of our containers */
+    min-height: 400px; 
+    border: 1px solid purple;
+    background-color: rgba(255, 0, 255, 0.3);
+    
+}
+
+.items{
+    border: 1px solid purple;
+    background-color: rgba(0,0,255,0.3);
+    width: 23%;
+    height: 300px;
+    
+}
+
+/* ATOMIC STYLES - SMALL & REUSABLE */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-even{
+    justify-content: space-evenly;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.align-stretch{
+    align-items: stretch;
+}
+
+/* FLEX ITEM STYLE ATOMS */
+.self-start{
+    align-self: flex-start;
+}
+.self-end{
+    align-self: flex-end;
+}
+.self-center{
+    align-self: center;
+}
+.self-stretch{
+    align-self: stretch;
+    /* Need to override our defined height for our class items so it can stretch */
+    height: auto;
+
+}
+
+/* Responsive breakpoint  */
+/* If statement of CSS */
+@media screen and (max-width: 768px) 
+{
+    .container{
+        flex-direction: column;
+        /* get al the flex items within to stretch. */
+        align-items: stretch; 
+        
+    }
+    /* we need to override the fixed width of 300 px so that it can stretch in column mode  */
+    
+    .items{
+        width: auto;
+        height: 300px;
+        margin: 2rem 1rem;
+    }
+}
+
+/* Classic layout example */
+header{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    background-color: cornflowerblue;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkcyan;
+}
+.grid-items{
+    width: 23%;
+    margin: 1%;
+
+}
+.secondary-Nav{
+    min-width: 25%;
+    background-color: aquamarine;
+}
+
+.menu{
+    /* Remove the list default */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    border-bottom: 1px solid gray;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.menu a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: black;
+    color:aliceblue;
+    min-height: 100px;
+}
+footer h2{
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) 
+{
+    .grid-items{
+        width: 48%;
+    }
+}
+
+
+/* Phone size */
+@media screen and (max-width: 768px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .secondary-Nav{
+        order: 1;
+    }
+    .grid-container{
+        order: 2;
+        flex-direction: column;
+    }
+    .grid-items{
+        width: 95%;
+    }
+}

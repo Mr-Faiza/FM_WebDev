@@ -1,0 +1,184 @@
+/* this is how you import a google font of any external font in a css file. This is essentially importing another style sheet into this style sheet */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+/* Global Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    /* This is how we get a full size fixed centered imaged BG  */
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Apply default font style at the body tag so that all the children elements can inherit this style and we can always overwrite when necesssary. */
+body{
+    
+    font-family: "Kaushan Script", serif;
+
+}
+
+/* To always make sure an image fits inside of its parents div apply these rules */
+img{
+
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+header{
+    width: 100%;
+    padding: 0 10%;
+    height: 50px;
+    overflow-y : hidden; /* Anythinh below the height mark of the y dimension will be hidden. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    z-index: 10;
+    background-color: gray;
+
+    /* Flex Container Properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/1062.jpg');
+}
+
+header h1{
+    color: #333;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none; /* removes the bullet */
+    text-align: center;
+    background-color: rgba(179, 216, 255, 0.8);
+    line-height: 50px;
+}
+
+nav li{
+    font-size: 18px;
+    height: 50px;
+    width:120px;
+
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    /* You always set the transition on the default state */
+    transition: all 5s;
+}
+nav a:hover{
+    background-color: rgba(5, 33, 63, 0.5);
+    color: #ccc;
+}
+
+nav a.active{
+    background-color: black;
+    color: #ccc;
+}
+
+/* Gallary */
+.container{
+    width: 900px;
+    margin: 100px auto;
+    /* when you use an inline block to stack elements, we have to zero out the font size on the parent or the container element.  */
+    font-size: 0;
+
+}
+.polaroid{
+    width: 260px;
+    margin: 20px;
+    display: inline-block;
+    /* whenever we want to absolute postion an element inside of another parent element, the parent element needs to be positioned as well ( declare it as NOT Static ) */
+    position: relative;
+}
+/* descendent selector */
+.polaroid img{
+    /* Border shorthand is width, style, color of the border */
+    border: 10px solid #ccc;
+    border-bottom-width: 45px;
+}
+.polaroid p{
+    font-size: 1rem;
+    position: absolute;
+    bottom: 14px;
+    width: 260px; /* Polaroid 260 px + borders from both side ( 10px + 10 px ) = 280 px */
+    text-align: center;
+    color: #333;
+}
+
+/* Transforms */
+.scaleUP {
+    transform: scale(1.5);
+}
+.scaleX{
+    transform: scale(2,1);
+}
+.scaleY{
+    transform: scaleY(2);
+}
+.skewX{
+    transform: skewX(-20deg);
+}
+.skewY{
+    transform: skewY(-20deg);
+}
+.skewBoth{
+    transform: skew(10deg, 30deg);
+}
+.rotX{
+    transform: rotateX(180deg);
+}
+.rotY{
+    transform: rotateY(180deg);
+}
+.rotZ{
+    transform: rotateZ(180deg);
+}
+.rotLeft{
+    transform: rotate(-20deg);
+    transform-origin: bottom left;
+    transition: all 5s ease-in-out;
+}
+
+.rotLeft:hover{
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+.skewHover{
+    transform: skewX(30deg);
+    transition: all 5s ease;
+}
+
+.skewHover:hover{
+    transform: skewX(-30deg);
+
+}
+
+.scaleHover{
+    transform: scale(0.5);
+    transition: all 5s ease-in;
+}
+
+.scaleHover:hover{
+    transform: scale(1.5);
+    
+}
+.colorswap{
+    filter:grayscale(100%);
+    transition: all 5s linear;
+}
+
+.colorswap:hover{
+    filter:grayscale(0);
+    cursor: pointer;
+}

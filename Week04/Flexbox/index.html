@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Layouts</title>
+    <link rel="stylesheet" href="./styles.css"/> 
+  </head>
+  <body>
+    <h2> Default flexbox behaviour </h2>
+    <div class ="container"> 
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+    </div>
+
+    <h2> Justify Start, Align Start </h2>
+    <div class ="container justify-start align-start"> 
+      <div class="items center">1</div>
+      <div class="items center">2</div>
+      <div class="items center">3</div>
+      <div class="items center">4</div>
+    </div>
+
+    <h2> Justify End, Align End </h2>
+    <div class ="container justify-end align-end"> 
+      <div class="items center">1</div>
+      <div class="items center">2</div>
+      <div class="items center">3</div>
+      <div class="items center">4</div>
+    </div>
+    
+    <h2> Justify Between, Align center </h2>
+    <div class ="container justify-between align-center"> 
+      <div class="items center">1</div>
+      <div class="items center">2</div>
+      <div class="items center">3</div>
+      <div class="items center">4</div>
+    </div>
+
+    <h2> Justify around, Align center </h2>
+    <div class ="container justify-around align-center"> 
+      <div class="items center">1</div>
+      <div class="items center">2</div>
+      <div class="items center">3</div>
+      <div class="items center">4</div>
+    </div>
+
+    <h2> Justify even, Align center, align self</h2>
+    <div class ="container justify-even align-center"> 
+      <div class="items center self-start"> self-start</div>
+      <div class="items center self-end">self-end</div>
+      <div class="items center self-center">self-center</div>
+      <div class="items center self-stretch">self-stretch</div>
+    </div>
+
+    <!-- Take a look at a common header footer sidebar and grid main content layout -->
+     <header> 
+      <h2> LOGO & Nav HERE </h2>
+     </header>
+      <div class="wrapper"> 
+        <main class="grid-container"> 
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+          <div class="grid-items">
+            <img src="https://placecats.com/300/300" alt="Cute cat"/>
+          </div>
+        </main>
+        <aside class="secondary-Nav"> 
+          <h2> Secondary Nav Side-Bar </h2>
+          <ul class="menu"> 
+            <li><a href="#">LINK 1</a></li>
+            <li><a href="#">LINK 1</a></li>
+            <li><a href="#">LINK 1</a></li>
+            <li><a href="#">LINK 1</a></li>
+            <li><a href="#">LINK 1</a></li>
+          </ul>
+        </aside>
+      </div>
+      <footer>
+        <h2> SOCIAL MEDIA LINKS</h2>
+      </footer>
+  </body>
+</html>
