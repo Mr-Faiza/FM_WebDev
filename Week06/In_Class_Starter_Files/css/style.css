@@ -1,0 +1,180 @@
+/* Global Styles */
+
+/*  Border Box style [ Padding, borders included into dimenstions */
+
+*{
+    box-sizing: border-box;
+}
+
+/* Zero out the margins */
+
+html, body {
+    margin: 0%;
+}
+
+/* Scale images to fit their parent containers */
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop first styling */
+/* Jumbotron styles */
+
+div.hero{
+    width: 100vw; /* viewport width */
+    max-height: 100vh; /* viewport height */ 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero article{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 50%;
+    padding: 2%;
+    background: linear-gradient(
+        90deg,
+        rgba(255,0,0,0.5) 0%, 
+        rgba(255,0,0,0) 100%
+    );
+
+}
+
+button, a.info {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s linear;
+
+}
+
+button:hover, 
+a.info:hover {
+    /* Change the color properties on hover Here */
+    color: chartreuse;
+    background-color: #111;
+
+}
+
+/* Portfolio Gallery  */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Thumb{
+    position: relative;
+    /*  Whatever units you choose to style your width, make sure its consistent across your media queries */
+    /* width: 30%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* Think of flex basis as our width. Width replacement for flex items */
+    flex-basis: 30%;
+    overflow: hidden;
+    margin: 24px auto; 
+    /* Auto will let flexbox calculate the margin */
+}
+
+/* Prepare the initial stage for our image transforms */
+.Thumb img {
+    /* Without start state, transition / transform later wouldn't work */
+    transform: scale(1);
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.Thumb:hover img{
+    transform: scale(1.5) rotate(-20deg);
+}
+
+.mask {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    background-color: rgba(255,255,255,0.5);
+    transition: all 1s ease-in-out;
+}
+
+.mask h2 {
+    margin: 0%;
+}
+
+.mask p {
+    font-style: italic;
+}
+
+.Thumb:hover .mask {
+    opacity: 1;
+}
+
+/* Set up the initial text scale for transform/transition */
+.Thumb .mask h2, 
+.Thumb .mask p,
+.Thumb .mask a {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-out;
+}  
+
+/* Now we make the text and buttons fade in and scale up when we hover over its parent .thumb div */
+.Thumb:hover .mask h2, 
+.Thumb:hover .mask p,
+.Thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease-out;
+} 
+
+/* Media Queries */
+
+/* Tablet */
+/* When we have an min and max range for our screen size, make sure you have an follow up media query outside of that range */
+@media screen and ( min-width: 760px) and (max-width: 1024px) 
+{
+    body
+    {
+        background-color: red;
+    }
+
+    .hero article{
+        width: 75%;
+    }
+
+    .Thumb {
+        flex-basis: 45% ;
+    }
+}
+
+/* Smaller / Mobile  */
+
+@media screen and (max-width: 768px) 
+{
+    .container {
+        flex-direction: column;
+        padding: 12px;
+    }
+    
+    .hero article{
+        width: 100%;
+        padding: 24px;
+        bottom: 0;
+    }
+}
