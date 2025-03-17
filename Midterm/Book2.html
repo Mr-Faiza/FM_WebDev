@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="./css/book2.css">
+</head>
+<body>
+
+    <div class="book-container">
+        <!-- Book Cover -->
+        <div class="book-cover">
+            <img src="./img/Harry Potter and the Sorcerer's Stone.jpg" alt="Book Cover">
+        </div>
+
+        <!-- Book Information -->
+        <div class="book-info">
+            <h1 class="book-title">Harry Potter and the Sorcerer's Stone</h1>
+            <!-- Clicking J.K. Rowling opens the modal -->
+            <a href="#author-info">
+                <h3 class="book-author">J.K. Rowling</h3>
+            </a>
+
+            <div class="book-meta">
+                <div class="meta-item">
+                    <strong>Type:</strong> <span>Published Book</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Chapters:</strong> <span>333 pages</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Language:</strong> <span>English</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Genre:</strong> 
+                    <span>Fantasy, Fiction, Magic, Young Adult</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Status:</strong> <span>Completed</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Link:</strong> 
+                    <a href="https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone" class="book-link">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Icon -->
+        <div class="icons">
+            <a href="./index.html">
+                <img src="./img/homeicon.png" alt="Home button">
+            </a>
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        <h2>Descriptions</h2>
+        <p>
+            "Turning the envelope over, his hand trembling, 
+            Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'."
+            Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. 
+            Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. 
+            Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: 
+            Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! 
+        </p>
+    </div>
+
+    <!-- J.K. Rowling Modal (Popup Window) -->
+    <div id="author-info" class="info_modal">
+        <div class="modal-content">
+            <!-- Close button to close the modal -->
+            <a href="#" class="close">X</a>
+            <h2>J.K. Rowling</h2>
+            <div class="author-info">
+                <strong>Genre:</strong> <span> Fiction, Young Adult, Fantasy </span>
+            </div>
+            <div class="author-info">
+                <strong>Website:</strong> 
+                <a href="http://www.jkrowling.com" target="_blank">J.K. Rowling's Official Website</a>
+            </div>
+            <div class="author-info">
+                <strong> Book's written : </strong>
+                <span>
+                    <ul> 
+                        <li> Harry Potter and the Sorcerer’s / Philosopher’s Stone (1997)</li>
+                        <li> Harry Potter and the Chamber of Secrets (1998)  </li>
+                        <li> Harry Potter and the Prisoner of Azkaban (1999) </li>
+                        <li> Harry Potter And The Goblet Of Fire (2000) </li>
+                        <li> Harry Potter And The Order Of The Phoenix (2003)  </li>
+                        <li> Harry Potter and the Half-Blood Prince (2005)  </li>
+                        <li> Harry Potter and the Deathly Hallows (2007)</li>
+                        <li> Harry Potter and the Cursed Child (2016)</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

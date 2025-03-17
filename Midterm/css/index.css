@@ -1,0 +1,345 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Freckle Face", system-ui;
+}
+
+/* Ensure full width and height */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Ensure images scale properly */
+img {
+    width: 100vw;
+    height: auto;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays above everything */
+    padding: 10px 0;
+    
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 25px 45px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.top-nav input[type=text] {
+    float: right;
+    padding: 0px 20px;
+    border: none;
+    font-size: 17px;
+    position: relative;
+}
+
+/* Search Container */
+.search-container {
+    position: relative; 
+    display: inline-block; 
+    width: 200px; 
+    margin-left: 20px; 
+}
+
+/* Search Bar */
+#searchbar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Search List */
+#list {
+    list-style: none;
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to the search container */
+    top: 100%; /* Place it directly below the search bar */
+    left: 0;
+    width: 100%; /* Match the width of the search bar */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000; /* Ensure it appears above other content */
+    max-height: 250px; /* Limit height and add scroll if needed */
+    overflow-y: auto;
+}
+
+#list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+}
+
+#list li:last-child {
+    border-bottom: none;
+}
+
+#list li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 16px;
+}
+
+#list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire screen */
+    z-index: -1; /* Sends image behind text */
+}
+
+/* Centered Text */
+.hero article {
+    position: absolute;
+    text-align: center;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 60px; /* Bigger text */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px; /* Bigger text */
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.hero button{
+    padding: 5px 15px;
+    font-size: 25px;
+    background-color: black;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    box-shadow: 2px 2px 2px 2px rgba(145, 144, 144, 0.9);
+}
+
+/* Book Section - Full Screen */
+
+.book-slider h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+.book-slider{
+    position: relative;
+}
+
+.book-container{
+    display: flex;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 45px;
+    
+}
+.book img{
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 45px;
+    box-shadow: 10px 10px 5px rgba(186, 186, 186,0.8);
+    cursor: pointer;
+    
+}
+
+/* Hover Effect */
+.book:hover {
+    transform: scale(1.15);
+}
+
+.book img:hover{
+    box-shadow: 10px 10px 5px rgba(173, 216, 230,0.8);
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.book p {
+    font-size: large;
+    padding: 13px;
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 1400px) {
+    
+    .hero article{
+        position: absolute;
+        top: 270px;
+        left: center;
+        color: black;
+    }
+
+
+    .hero img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        bottom: 0%;
+        object-fit: cover;
+        object-position: 0px; /* Ensures the image covers the entire screen */
+        z-index: -1; /* Sends image behind text */
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 430px) {
+    /* Navigation Bar */
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    nav ul li a:hover{
+        color: rgb(41, 134, 234);
+        background: none;
+        
+    }
+
+    #searchbar {
+        position: relative;
+        width: 200px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero img{
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        left: 0%;
+        bottom: 0%;
+        object-fit: cover;
+        object-position: 0px; /* Ensures the image covers the entire screen */
+        z-index: -1; /* Sends image behind text */
+    }
+
+    .hero button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    /* Book Slider */
+    .book-slider h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .book-container {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .book img {
+        flex-direction: column;
+        width: 250px;
+        height: 325px;
+        margin-right: 20px;
+    }
+
+    .book p {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    /* Hover Effect */
+    .book:hover {
+        transform: scale(1.05);
+    }
+}

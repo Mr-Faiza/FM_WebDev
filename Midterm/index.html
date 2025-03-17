@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Browsing</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript">
+        function search_books() {
+            let input = document.getElementById('searchbar').value.toLowerCase();
+            let x = document.getElementsByClassName('bookNames');
+            let hasMatches = false;
+
+            for (let i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "list-item";
+                    hasMatches = true;
+                }
+            }
+
+            // Show or hide the dropdown based on matches
+            const bookList = document.getElementById('list');
+            if (input.length > 0 && hasMatches) {
+                bookList.style.display = "block";
+            } else {
+                bookList.style.display = "none";
+            }
+        }
+
+        // Show dropdown when search bar is focused
+        document.getElementById('searchbar').addEventListener('focus', function() {
+            document.getElementById('list').style.display = "block";
+        });
+
+        // Hide dropdown when search bar loses focus (with a slight delay)
+        document.getElementById('searchbar').addEventListener('blur', function() {
+            setTimeout(() => {
+                document.getElementById('list').style.display = "none";
+            }, 200);
+        });
+    </script>
+</head>
+<body>
+    <!-- Nav Bar -->
+     <nav> 
+        <div class="top-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Library</a></li>               
+            </ul>
+
+            <div class="search-container">
+                <input id="searchbar"
+            onkeyup="search_books()"
+            type="text" name="Search"
+            placeholder="Search...">
+
+            <ul id="list">
+                <li class="bookNames"><a href="book1.html">Carnival</a></li>
+                <li class="bookNames"><a href="book2.html">Harry Potter and the Sorcerer’s Stone</a></li>
+                <li class="bookNames"><a href="book3.html">Jane Eyre/a></li>
+                <li class="bookNames"><a href="book4.html">Sea Smoke</a></li>
+                <li class="bookNames"><a href="book5.html">Ballad of Sword & Wine</a></li>
+                <li class="bookNames"><a href="book6.html">The earth is online</a></li>
+            </ul>
+            </div>
+            
+        </div>
+     </nav>
+
+     <!-- Hero -->
+      <header>
+        <div class="hero" id="section1">
+            <img src="./img/image bg.png" alt="Skullpanda figurine in a white screen" />
+            <article> 
+            <h1> Welcome to Escape </h1>
+            <p> One more chapter..?</p>
+            <a href="#section2">
+                <button>Enter</button>
+            </a>            
+            </article>
+            
+        </div>
+      </header>
+      <div class="book-slider" id="section2">
+        <h2> The Best of The Best </h2>
+        <div class="book-container">
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 1.jpg" alt="Book 1">
+                </a>
+                <p>Book Name 1</p>
+            </div>
+            <div class="book">
+                <a href="./Book2.html">
+                <img src="./img/Harry Potter and the Sorcerer's Stone.jpg" alt="Book 2">
+                </a>
+                <p>Harry Potter and the Sorcerer’s Stone</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 3.jpg" alt="Book 3">
+                </a>
+                <p>Book Name 3</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 4.jpg" alt="Book 4">
+                </a>
+                <p>Book Name 4</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 5.jpg" alt="Book 5">
+                </a>
+                <p>Book Name 5</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 1.jpg" alt="Book 1">
+                </a>
+                <p>Book Name 1</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 2.jpg" alt="Book 2">
+                </a>
+                <p>Book Name 2</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 3.jpg" alt="Book 3">
+                </a>
+                <p>Book Name 3</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 4.jpg" alt="Book 4">
+                </a>
+                <p>Book Name 4</p>
+            </div>
+            <div class="book">
+                <a href="#">
+                <img src="./img/Book cover 5.jpg" alt="Book 5">
+                </a>
+                <p>Book Name 5</p>
+            </div>
+            
+        </div>
+      </div>
+      <!-- Scroll bar of books -->
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+.book-container{
+    display: flex;
+    justify-content: left;
+}
+
+.book-cover img{
+    width: 390px;
+    height: 550px;
+    border-radius: 10px;
+    margin: 45px;
+    box-shadow: 10px 10px 5px rgba(59, 59, 59, 0.8);
+}
+
+.book-info{
+    margin: 45px;
+    line-height: 60px;
+    
+}
+
+.book-meta{
+    line-height: normal;
+    width: 62vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 30px 20px 30px;
+    justify-content: space-evenly;
+    gap: 30px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.meta-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc; /* Light separator */
+}
+
+/* Modal Styling */
+.info_modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 400ms ease-in-out;
+}
+
+/* When targeted, modal becomes visible */
+.info_modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Modal Box */
+.modal-content {
+    width: 600px;
+    line-height: 40px;
+    height: auto;
+    background-color: #000000;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    color: black;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+.author-info ul{
+    padding-left: 35px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    color: rgb(27, 67, 200);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.close:hover {
+    color: rgb(255, 167, 5);
+    transform: scale(1.2);
+    rotate: 180deg;
+}
+
+/* Remove border from last item */
+.meta-item:last-child {
+    border-bottom: none;
+}
+
+.meta-item strong {
+    width: 120px; /* Align labels */
+}
+
+.meta-item span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Book Link */
+.book-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+    
+}
+
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+}
+
+
+.description {
+    margin-left: 45px;
+    width: 90vw;
+    padding: 10px 10px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.description h2{
+    padding: 10px 0px 10px 0px;
+}
+
+.description p{
+    padding: 0px 20px 10px 0px;
+    line-height: 50px;
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 1400px) {
+    /* Global Adjustments */
+    * {
+        font-size: 16px; /* Slightly larger font size for tablets */
+    }
+
+    /* Book Container */
+    .book-container {
+        flex-direction: column; /* Keep items in a row */
+        align-items: center; /* Align items to the top */
+        justify-content: space-between; /* Space out book cover and home icon */
+        padding: 30px; /* Add some padding */
+    }
+
+    /* Book Cover */
+    .book-cover img {
+        width: 50vw; /* Adjust image size for tablets */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margin */
+    }
+
+
+    /* Home Icon */
+    .home-icon {
+        display: flex;
+        align-items: center; /* Center icon vertically */
+        margin-left: 30px; /* Add spacing between book cover and icon */
+    }
+
+    .home-icon img {
+        width: 35px; /* Adjust icon size */
+        height: 35px;
+    }
+
+    /* Book Info */
+    .book-info {
+        margin: 30px 0; /* Adjust margin */
+        line-height: 50px; /* Adjust line height */
+        text-align: center;
+    }
+
+    /* Book Meta */
+    .book-meta {
+        text-align: left;
+        width: 90vw; /* Slightly wider than mobile */
+        margin-top: 30px; /* Reduce margin */
+        padding: 30px; /* Reduce padding */
+        gap: 30px; /* Reduce gap */
+    }
+
+    .meta-item {
+        font-size: 16px; /* Slightly larger font size */
+        padding: 5px 0; /* Adjust padding */
+    }
+
+    .meta-item strong {
+        width: 120px; /* Adjust label width */
+    }
+
+    /* Modal Styling */
+    .modal-content {
+        width: 70vw; /* Slightly wider than mobile */
+        line-height: 40px; /* Adjust line height */
+        padding: 30px; /* Reduce padding */
+    }
+
+    .author-info ul {
+        padding-left: 30px; /* Reduce padding */
+    }
+
+    /* Close Button */
+    .close {
+        font-size: 20px; /* Slightly larger font size */
+    }
+
+    /* Description */
+    .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw; /* Slightly wider than mobile */
+    }
+
+    .description h2 {
+        padding: 20px 0; /* Adjust padding */
+    }
+
+    .description p {
+        padding: 0 20px 20px 0; /* Adjust padding */
+        line-height: 40px; /* Adjust line height */
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 430px) {
+    /* Global Adjustments */
+    * {
+        font-size: 14px; 
+    }
+
+    /* Book Container */
+    .book-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    /* Book Cover */
+    .book-cover img {
+        width: 250px; 
+        height: auto; 
+        margin: 20px 0; 
+    }
+
+    /* Book Info */
+    .book-info {
+        margin: 20px; 
+        line-height: 40px; 
+        text-align: center;
+    }
+
+    /* Book Meta */
+    .book-meta {
+        text-align: left;
+        width: 90vw; 
+        margin-top: 20px; 
+        padding: 20px; 
+        gap: 20px; 
+    }
+
+    .meta-item {
+        font-size: 14px; 
+        padding: 5px 0; 
+    }
+
+    .meta-item strong {
+        width: 100px; 
+    }
+
+    /* Modal Styling */
+    .modal-content {
+        width: 90vw;
+        line-height: 30px; 
+        padding: 20px; 
+    }
+
+    .author-info ul {
+        padding-left: 20px; 
+    }
+
+    /* Close Button */
+    .close {
+        font-size: 18px; 
+    }
+
+    /* Icons */
+    .icons img {
+        width: 25px; 
+        height: 25px;
+        margin-top: 20px; 
+        
+    }
+    /* Description */
+    .description {
+        margin-left: 20px; 
+        width: 90vw; /* Full width with some padding */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .description h2 {
+        padding: 10px 0; /* Adjust padding */
+    }
+
+    .description p {
+        padding: 0 10px 10px 0; /* Adjust padding */
+        line-height: 30px; /* Adjust line height */
+    }
+}
