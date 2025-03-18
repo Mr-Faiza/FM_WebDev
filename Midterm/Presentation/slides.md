@@ -1,5 +1,5 @@
 # Pitch Deck - Web # 
-### Homework 05 ### 
+### Midterm Project Presentation ### 
 **Faiza Mohamed Rabeek**
 
 This is the public view link of the [Presentation](https://www.canva.com/design/DAGfa_DLcaw/0lQOoI6NJfwsTIbLXr9cQQ/view?utm_content=DAGfa_DLcaw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha646e5bb7a)
