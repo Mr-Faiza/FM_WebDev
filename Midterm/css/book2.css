@@ -1,13 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Georgia", serif;
+    font-family: "Kanit", sans-serif;
     background-color: black;
     color: aliceblue;
 }
 
+/* BOOK COVER  */
 .book-container{
     display: flex;
     justify-content: left;
@@ -27,6 +31,8 @@
     
 }
 
+/* INFO BOX OF BOOKS  */
+
 .book-meta{
     line-height: normal;
     width: 62vw;
@@ -40,6 +46,7 @@
     border-radius: 10px;
 }
 
+/* INDIVIDUAL ITEMS SUCH AS TYPE, CHARACTERS  */
 .meta-item {
     display: flex;
     justify-content: flex-start;
@@ -48,6 +55,21 @@
     padding: 5px 0;
     border-bottom: 1px solid #ccc; /* Light separator */
 }
+
+/* Remove border from last item */
+.meta-item:last-child {
+    border-bottom: none;
+}
+
+.meta-item strong {
+    width: 120px; 
+}
+
+.meta-item span {
+    flex: 1;
+    text-align: left;
+}
+
 
 /* Modal Styling */
 .info_modal {
@@ -86,6 +108,7 @@
 
 }
 
+/* THE LIST OF BOOKS AUTHOR HAS WRITTEN */
 .author-info ul{
     padding-left: 35px;
 }
@@ -108,20 +131,6 @@
     rotate: 180deg;
 }
 
-/* Remove border from last item */
-.meta-item:last-child {
-    border-bottom: none;
-}
-
-.meta-item strong {
-    width: 120px; /* Align labels */
-}
-
-.meta-item span {
-    flex: 1;
-    text-align: left;
-}
-
 /* Book Link */
 .book-link {
     text-decoration: none;
@@ -134,13 +143,8 @@
     
 }
 
-.icons img{
-    width: 30px;
-    height: 30px;
-    margin-top: 45px;
-}
 
-
+/* DESCRIPTION BOX  */
 .description {
     margin-left: 45px;
     width: 90vw;
@@ -158,80 +162,87 @@
     line-height: 50px;
 }
 
+/* HOME ICON */
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+}
 
-@media screen and (min-width: 431px) and (max-width: 1400px) {
+/* ------------------- DESKTOP DESIGN ----------------  */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
     /* Global Adjustments */
     * {
-        font-size: 16px; /* Slightly larger font size for tablets */
+        font-size: 16px; 
     }
 
     /* Book Container */
     .book-container {
-        flex-direction: column; /* Keep items in a row */
-        align-items: center; /* Align items to the top */
-        justify-content: space-between; /* Space out book cover and home icon */
-        padding: 30px; /* Add some padding */
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-between;
+        padding: 30px; 
     }
 
     /* Book Cover */
     .book-cover img {
-        width: 50vw; /* Adjust image size for tablets */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0; /* Remove margin */
+        width: 50vw; 
+        height: auto; 
+        margin: 0; 
     }
 
 
     /* Home Icon */
     .home-icon {
         display: flex;
-        align-items: center; /* Center icon vertically */
-        margin-left: 30px; /* Add spacing between book cover and icon */
+        align-items: center; 
+        margin-left: 30px; 
     }
 
     .home-icon img {
-        width: 35px; /* Adjust icon size */
+        width: 35px; 
         height: 35px;
     }
 
     /* Book Info */
     .book-info {
-        margin: 30px 0; /* Adjust margin */
-        line-height: 50px; /* Adjust line height */
+        margin: 30px 0; 
+        line-height: 50px; 
         text-align: center;
     }
 
     /* Book Meta */
     .book-meta {
         text-align: left;
-        width: 90vw; /* Slightly wider than mobile */
-        margin-top: 30px; /* Reduce margin */
-        padding: 30px; /* Reduce padding */
-        gap: 30px; /* Reduce gap */
+        width: 90vw; 
+        margin-top: 30px; 
+        padding: 30px; 
+        gap: 30px; 
     }
 
     .meta-item {
-        font-size: 16px; /* Slightly larger font size */
-        padding: 5px 0; /* Adjust padding */
+        font-size: 16px; 
+        padding: 5px 0; 
     }
 
     .meta-item strong {
-        width: 120px; /* Adjust label width */
+        width: 120px; 
     }
 
     /* Modal Styling */
     .modal-content {
-        width: 70vw; /* Slightly wider than mobile */
-        line-height: 40px; /* Adjust line height */
-        padding: 30px; /* Reduce padding */
+        width: 70vw; 
+        line-height: 40px; 
+        padding: 30px; 
     }
 
     .author-info ul {
-        padding-left: 30px; /* Reduce padding */
+        padding-left: 30px; 
     }
 
     /* Close Button */
     .close {
-        font-size: 20px; /* Slightly larger font size */
+        font-size: 20px; 
     }
 
     /* Description */
@@ -239,21 +250,21 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 90vw; /* Slightly wider than mobile */
+        width: 90vw; 
     }
 
     .description h2 {
-        padding: 20px 0; /* Adjust padding */
+        padding: 20px 0; 
     }
 
     .description p {
-        padding: 0 20px 20px 0; /* Adjust padding */
-        line-height: 40px; /* Adjust line height */
+        padding: 0 20px 20px 0; 
+        line-height: 40px; 
     }
 }
 
-/* MOBILE */
-@media screen and (max-width: 430px) {
+/* ------------- MOBILE SCREEN DESIGN ----------------- */
+@media screen and (max-width: 768px) {
     /* Global Adjustments */
     * {
         font-size: 14px; 
@@ -261,8 +272,8 @@
 
     /* Book Container */
     .book-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     /* Book Cover */
@@ -323,16 +334,16 @@
     /* Description */
     .description {
         margin-left: 20px; 
-        width: 90vw; /* Full width with some padding */
-        padding: 10px; /* Reduce padding */
+        width: 90vw; 
+        padding: 10px; 
     }
 
     .description h2 {
-        padding: 10px 0; /* Adjust padding */
+        padding: 10px 0; 
     }
 
     .description p {
-        padding: 0 10px 10px 0; /* Adjust padding */
-        line-height: 30px; /* Adjust line height */
+        padding: 0 10px 10px 0; 
+        line-height: 30px; 
     }
 }
