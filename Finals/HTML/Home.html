@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiza's Portfolio</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+    <!-- ---------------- -->
+    <!-- HEADER - NAV BAR -->
+    <!-- ---------------- -->
+    <header>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <h2>Faiza's Portfolio</h2>
+            <!-- NAV LIST -->
+            <div class="top-nav"> 
+                <ul>
+                    <li><a href="#home-pg" class="active">Home</a></li>
+                    <li><a href="#games-pg">Games</a></li>
+                    <li><a href="#designs-pg">Designs</a></li>
+                    <li><a href="#literary-pg">Literary</a></li>
+                    <li><a href="#Resume-pg">Resume</a></li>
+                </ul>
+            </div>
+            <!-- CONTACT BUTTON -->
+            <div class="contact-pg">
+                <a href="#contact-form" class="contact-btn">
+                    <img src="../Img/contact me button.png" alt="contact">
+                </a>
+                <div id="contact-form" class="contact-form">
+                    <a href="https://www.linkedin.com/in/mr-faiza/">
+                        <img src="../Img/contact form.png" alt="Contact Form">
+                    </a>
+                    <a href="#" class="close-contact">X</a>
+                </div>
+            </div>
+        </nav>
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <img src="../Img/Home page BG Img.png" alt="Website Background">
+            <img src="../Img/1st page logo.png" alt="Portfolio Logo">
+        </div>
+    </header>
+
+    <!-- ---------------------- -->
+    <!-- MAIN CONTAINER & PAGES -->
+    <!-- ---------------------- -->
+    <div class="main-container">
+        
+        <!-- ------------ -->
+        <!-- HOME PAGE -->
+        <!-- ------------ -->
+        <div class="pages" id="home-pg">
+            <div class="popup-box">
+                <img src="../Img/Hello Message.png" alt="Hello Message" id="hello-msg">
+                <img src="../Img/I'm Faiza.png" alt="I'm Faiza Message" id="ImFaiza-msg">
+                <img src="../Img/About me message.png" alt="About me Message" id="aboutme-msg">
+            </div>  
+        </div>
+
+        <!-- ------------ -->
+        <!-- GAMES PAGE -->
+        <!-- ------------ -->
+        <div class="pages" id="games-pg">
+            <h2 class="Page-titles">Games Made</h2>
+            <!-- GAME COVERS -->
+            <div class="show-games">
+                <div class="game-item">
+                    <a href="#Hear-me-out">
+                        <img src="../Img/H.png" alt="Hear me out game cover">
+                    </a>
+                    <h3>Hear Me Out!</h3>
+                </div>
+                <div class="game-item">
+                    <a href="#In-the-clouds">
+                        <img src="../Img/In the clouds game cover.png" alt="In the clouds game cover">
+                    </a>
+                    <h3>In The Clouds!</h3>
+                </div>
+                <div class="game-item">
+                    <a href="#Serenity-sown">
+                        <img src="../Img/Serenity Sown - cover.png" alt="Serenity Sown game cover">
+                    </a>
+                    <h3>Serenity Sown!</h3>
+                </div>
+            </div>
+
+            <!-- GAME INFO MODALS -->
+            <div id="Hear-me-out" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Hear me out!</h2>
+                    <div class="HMcards">
+                        <div class="HM c1"><img src="../Img/Card1.png"></div>
+                        <div class="HM c2"><img src="../Img/Card2.png"></div>
+                        <div class="HM c3"><img src="../Img/Card3.png"></div>
+                        <div class="HM c4"><img src="../Img/Card4.png"></div>
+                        <div class="HM c5"><img src="../Img/Card5.png"></div>
+                    </div>
+                    <div class="game-info">
+                        <strong>Genre:</strong> <span>Social, Card Game</span><br><br>
+                        <strong>Description:</strong>
+                        <p>Hear Me Out is a fun and engaging social game designed for friends to explore each other's tastes and preferences by guessing which inanimate objects they would "ship" together. Players take turns as the "shipper," to ship 2 cards out of the 3 chosen from a card deck while other players would guess the "ship", creating opportunities for surprises, laughter and connection among players.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="In-the-clouds" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>In the clouds!</h2>
+                    <div class="game-info">
+                        <strong>Genre:</strong> <span>One-player, Relaxing, Music</span><br><br>
+                        <strong>Description:</strong>
+                        <p>Don't we all have moments where you just want to bounce on clouds each playing a different music? No score, no competition, no threat. Just you and your friend, bouncing on clouds, listening to music and enjoying time!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Serenity-sown" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Serenity Sown!</h2>
+                    <div class="game-info">
+                        <strong>Genre:</strong> <span>Life simulation, gardening, and narrative exploration.</span><br><br>
+                        <strong>Description:</strong>
+                        <p>"In Serenity Sown" is a narrative-driven, meditative life simulation game that invites players into the tranquil setting of a rural village. It features single-player gameplay that blends gardening mechanics, relationship-building, and a poignant healing narrative. The game begins in a monochromatic world, reflecting the protagonist's mental state. Through small acts of care and connection, players restore vibrancy and vitality to the environment, paralleling the protagonist's emotional recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------- -->
+        <!-- DESIGNS PAGE -->
+        <!-- -------------- -->
+        <div class="pages" id="designs-pg">
+            <h2 class="Page-titles">Designs</h2>
+            <!-- DESIGN COVERS -->
+            <div class="show-designs">
+                <a href="#Website-design"><img src="../Img/WEBSITE COVER.png" alt="Design Preview" id="Website-cover-design"></a>
+                <a href="#Card-design"><img src="../Img/Card design cover.png" alt="Design Preview" id="Card-cover-design"></a>
+                <a href="#Game-design"><img src="../Img/Hear me out card design cover.png" alt="Design Preview" id="Game-cover-design"></a>
+                <a href="#Magazine-design"><img src="../Img/Magazine cover.png" alt="Design Preview" id="Magazine-cover-design"></a>
+                <a href="#Logo-design"><img src="../Img/LOGO Design cover.png" alt="Design Preview" id="Logo-cover-design"></a>
+            </div>
+
+            <!-- DESIGN INFO MODALS -->
+            <div id="Website-design" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>NYU Engage Website Redesign</h2>
+                    <div class="game-info">
+                        <strong>Skills:</strong> <span>UX/UI, Figma, Graphic Design</span><br><br>
+                        <strong>Year:</strong> <span>2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Card-design" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Standard Playing Card Re-design</h2>
+                    <div class="game-info">
+                        <strong>Skills:</strong> <span>Graphic Design</span><br><br>
+                        <strong>Year:</strong> <span>2025</span>
+                        <div class="CCards">
+                            <div class="CC C1"><img src="../Img/1.png"></div>
+                            <div class="CC C2"><img src="../Img/2.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Game-design" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Hear me out Game Card Design</h2>
+                    <div class="game-info">
+                        <strong>Skills:</strong> <span>Graphic Design</span><br><br>
+                        <strong>Year:</strong> <span>2025</span>
+                        <div class="HMcards2">
+                            <div class="HM2 c12"><img src="../Img/Card1.png"></div>
+                            <div class="HM2 c22"><img src="../Img/Card2.png"></div>
+                            <div class="HM2 c32"><img src="../Img/Card3.png"></div>
+                            <div class="HM2 c42"><img src="../Img/Card4.png"></div>
+                            <div class="HM2 c52"><img src="../Img/Card5.png"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div id="Magazine-design" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Edison Literary Magazine Design Editor</h2>
+                    <div class="game-info">
+                        <strong>Skills:</strong> <span>UX/UI, Figma, Graphic Design</span><br><br>
+                        <strong>Year:</strong> <span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Logo-design" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Personal Logo</h2>
+                    <div class="game-info">
+                        <strong>Skills:</strong> <span>Graphic Design</span><br><br>
+                        <strong>Year:</strong> <span>2025</span>
+                    </div>
+                    <img src="../Img/LOGO Design cover.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- -->
+        <!-- LITERARY PAGE -->
+        <!-- --------------- -->
+        <div class="pages" id="literary-pg">
+            <h2 class="Page-titles">Literary Works</h2>
+            <!-- WRITING CATEGORIES -->
+            <div class="show-works">
+                <div class="writing-items">
+                    <a href="#ResearchWriting">
+                        <img src="../Img/research cover.png">
+                        <h3>Research Papers</h3>
+                    </a>
+                </div>
+                <div class="writing-items">
+                    <a href="#CreativeWriting">
+                        <img src="../Img/creative writing cover.png">
+                        <h3>Creative works</h3>
+                    </a>
+                </div>
+
+                <!-- LITERARY WORK MODALS -->
+                <div id="CreativeWriting" class="info_modal">
+                    <div class="modal-content">
+                        <a href="#" class="close">X</a>
+                        <h2>Creative Writing</h2>
+                        <div class="game-info">
+                            <ul>
+                                <li>Name 1</li>
+                                <li>Name 2</li>
+                                <li>Name 3</li>
+                                <li>Name 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ResearchWriting" class="info_modal">
+                    <div class="modal-content">
+                        <a href="#" class="close">X</a>
+                        <h2>Research Writing</h2>
+                        <div class="game-info">
+                            <ul>
+                                <li>Name 1</li>
+                                <li>Name 2</li>
+                                <li>Name 3</li>
+                                <li>Name 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------- -->
+        <!-- RESUME PAGE -->
+        <!-- ------------- -->
+        <div class="pages" id="Resume-pg">
+            <h2 class="Page-titles">Resume</h2>
+            <!-- RESUME CATEGORIES -->
+            <div class="show-resume">
+                <div class="resume-items">
+                    <a href="#experiences-modal"><button id="experiences">Work Experience</button></a>
+                    <a href="#education-modal"><button id="education">Education</button></a>
+                    <a href="#extracurriculor-modal"><button id="extracurriculor">Extracurricular</button></a>
+                    <a href="#skills-modal"><button id="Skills">Skills</button></a>
+                </div>
+            </div>
+
+            <!-- RESUME INFO MODALS -->
+            <div id="experiences-modal" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Work Experience</h2>
+                    <div class="game-info">
+                        <strong>Position</strong>
+                        <span>Program Assistant of Post-secondary Success</span>
+                        <strong>Duration</strong>
+                        <span>2024 - 2025</span>
+                        <strong>Organization</strong>
+                        <span>Urban Arts</span>
+                        <strong>Responsibilities</strong>
+                        <div>
+                            <p>• Collaborated with teaching staff to develop and implement innovative projects</p>
+                            <p>• Created comprehensive grading protocols and lesson plans</p>
+                            <p>• Designed engaging prototypes for student activities</p>
+                            <p>• Facilitated effective student engagement strategies</p>
+                        </div>
+                        <span>------------------------------</span>
+                        <strong>Position</strong>
+                        <span>Program Assistant of Post-secondary Success</span>
+                        <strong>Duration</strong>
+                        <span>2024 - 2025</span>
+                        <strong>Organization</strong>
+                        <span>Urban Arts</span>
+                        <strong>Responsibilities</strong>
+                        <div>
+                            <p>• Collaborated with teaching staff to develop and implement innovative projects</p>
+                            <p>• Created comprehensive grading protocols and lesson plans</p>
+                            <p>• Designed engaging prototypes for student activities</p>
+                            <p>• Facilitated effective student engagement strategies</p>
+                        </div>
+                        <span>------------------------------</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education-modal" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Education</h2>
+                    <div class="game-info">
+                        <div class="education-card current">
+                            <div class="education-header">
+                                <span class="degree-title">BS in Integrated Design & Media</span>
+                                <span class="gpa-badge">3.9 GPA</span>
+                            </div>
+                            <div class="education-details">
+                                <strong>Institution:</strong> NYU Tandon School of Engineering<br>
+                                <strong>Duration:</strong> 2025 - 2028 (Expected)<br>
+                                <strong>Focus Areas:</strong> 
+                                <ul>
+                                    <li>Interactive Media Design</li>
+                                    <li>Engineering & Design</li>
+                                    <li>Audio, Video, Web, Photography, Game Developement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="education-card">
+                            <div class="education-header">
+                                <span class="degree-title">BFA in Game Design</span>
+                                <span class="duration">2024 - 2025</span>
+                            </div>
+                            <div class="education-details">
+                                <strong>Institution:</strong> NYU Tisch School of the Arts<br>
+                                <strong>Key Studies:</strong> 
+                                <ul>
+                                    <li>Game Design Fundamentals</li>
+                                    <li>Processing, Gamemaker, Unreal, Unity Engine Proficiency</li>
+                                    <li>Game Prototyping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="extracurriculor-modal" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Extracurriculors</h2>
+                    <div class="game-info">
+                        <strong>Position</strong>
+                        <span>Program Assistant of Post-secondary Success</span>
+                        <strong>Duration</strong>
+                        <span>2024 - 2025</span>
+                        <strong>Organization</strong>
+                        <span>Urban Arts</span>
+                        <strong>Responsibilities</strong>
+                        <div>
+                            <p>• Collaborated with teaching staff to develop and implement innovative projects</p>
+                            <p>• Created comprehensive grading protocols and lesson plans</p>
+                            <p>• Designed engaging prototypes for student activities</p>
+                            <p>• Facilitated effective student engagement strategies</p>
+                        </div>
+                        <span>------------------------------</span>
+                        <strong>Position</strong>
+                        <span>Program Assistant of Post-secondary Success</span>
+                        <strong>Duration</strong>
+                        <span>2024 - 2025</span>
+                        <strong>Organization</strong>
+                        <span>Urban Arts</span>
+                        <strong>Responsibilities</strong>
+                        <div>
+                            <p>• Collaborated with teaching staff to develop and implement innovative projects</p>
+                            <p>• Created comprehensive grading protocols and lesson plans</p>
+                            <p>• Designed engaging prototypes for student activities</p>
+                            <p>• Facilitated effective student engagement strategies</p>
+                        </div>
+                        <span>------------------------------</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills-modal" class="info_modal">
+                <div class="modal-content">
+                    <a href="#" class="close">X</a>
+                    <h2>Skills</h2>
+                    <div class="skills-container">
+                        <div class="skills-box"><strong>HTML</strong></div>
+                        <div class="skills-box"><strong>CSS</strong></div>
+                        <div class="skills-box"><strong>JavaScript</strong></div>
+                        <div class="skills-box"><strong>C#</strong></div>
+                        <div class="skills-box"><strong>Figma</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================== -->
+    <!-- JAVASCRIPT FUNCTIONALITY -->
+    <!-- ====================== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // -------------------------------- //
+        // CARD ANIMATIONS FOR GAME SECTION //
+        // -------------------------------- //
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial setup for Hear Me Out cards
+            gsap.set(".HMcards .HM", {
+                y: 50,
+                opacity: 0,
+                zIndex: (i) => i + 1,
+                transform: "translateX(-50%) rotate(0deg)"
+            });
+
+            // Create spread animation timeline
+            const spreadCards = gsap.timeline({ 
+                paused: true,
+                defaults: { 
+                    duration: 0.8, 
+                    ease: "back.out(1.7)",
+                    opacity: 1,
+                    y: 0
+                } 
+            });
+
+            // Animate each card to its spread position
+            spreadCards.to(".HMcards .c1", { x: -490, rotation: -7 }, 0)
+                      .to(".HMcards .c2", { x: -320, y: 70, rotation: 5 }, 0.1)
+                      .to(".HMcards .c3", { x: -140, rotation: 0 }, 0.2)
+                      .to(".HMcards .c4", { x: 90, rotation: -7 }, 0.3)
+                      .to(".HMcards .c5", { x: 250, y: 60, rotation: 15 }, 0.4);
+            
+            // Trigger animation when modal opens
+            window.addEventListener('hashchange', function() {
+                if (window.location.hash === '#Hear-me-out') spreadCards.restart();
+            });
+            
+            // If modal is already open on page load
+            if (window.location.hash === '#Hear-me-out') spreadCards.restart();
+
+            // ------------------------------------------ //
+            // CARD ANIMATIONS FOR DESIGN SECTION CARDS //
+            // ------------------------------------------ //
+            // Reset initial positions for design cards
+            gsap.set(".HMcards2 .HM2", { y: 50, opacity: 0, zIndex: (i) => i + 1, x: 0, rotation: 0 });
+            gsap.set(".CCards .CC", { y: 50, opacity: 0, zIndex: (i) => i + 1, x: 0, rotation: 0 });
+    
+            // Create spread animation for game design cards
+            const spreadHM2 = gsap.timeline({
+                paused: true,
+                defaults: { duration: 0.8, ease: "back.out(1.7)", opacity: 1, y: 0 }
+            });
+    
+            spreadHM2.to(".HMcards2 .c12", { x: 250, y: 30, rotation: 10 }, 0)
+                     .to(".HMcards2 .c22", { x: 95, y: -10, rotation: -1.5 }, 0.1)
+                     .to(".HMcards2 .c32", { x: -105, y: 20, rotation: 2 }, 0.2)
+                     .to(".HMcards2 .c42", { x: -310, y: -10, rotation: 7.5 }, 0.3)
+                     .to(".HMcards2 .c52", { x: -470, y: 30, rotation: -7.55 }, 0.4);
+    
+            // Create spread animation for playing cards
+            const spreadCC = gsap.timeline({
+                paused: true,
+                defaults: { duration: 0.8, ease: "back.out(1.7)", opacity: 1, y: 0 }
+            });
+    
+            spreadCC.to(".CCards .C1", { x: -180, y: 20, rotation: -5 }, 0)
+                    .to(".CCards .C2", { x: 30, y: 10, rotation: 4 }, 0.1);
+    
+            // Trigger animations when modals open
+            window.addEventListener('hashchange', function() {
+                if (window.location.hash === '#Game-design') spreadHM2.restart();
+                if (window.location.hash === '#Card-design') spreadCC.restart();
+            });
+            
+            // If modals are already open on page load
+            if (window.location.hash === '#Game-design') spreadHM2.restart();
+            if (window.location.hash === '#Card-design') spreadCC.restart();
+
+            // --------------------------- //
+            // NAVIGATION & SCROLL BEHAVIOR //
+            // --------------------------- //
+            const navLinks = document.querySelectorAll('.top-nav a');
+            
+            // Smooth scroll to sections
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+            
+            // Update active nav link on scroll
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                
+                document.querySelectorAll('.pages').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPosition >= sectionTop - 100 && 
+                        scrollPosition < sectionTop + sectionHeight - 100) {
+                        const id = '#' + section.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            });
+
+            // --------------------- //
+            // MOBILE MENU TOGGLE //
+            // --------------------- //
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.top-nav ul');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('show');
+                });
+                
+                // Close menu when clicking a link
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('show');
+                    });
+                });
+            }
+
+            // ---------------- //
+            // KEYBOARD CONTROLS //
+            // ---------------- //
+            document.addEventListener('keydown', function(event) {
+                // Ignore if typing in a form field
+                if (document.activeElement.tagName === 'INPUT') return;
+                
+                // Check if any modal is open
+                const visibleModal = document.querySelector('.info_modal:target, .contact-form:target');
+                
+                // ESCAPE KEY - Close modals
+                if (event.key === 'Escape' && visibleModal) {
+                    document.querySelectorAll('.info_modal, .contact-form').forEach(modal => {
+                        modal.style.opacity = '0';
+                        modal.style.pointerEvents = 'none';
+                    });
+                    history.pushState("", document.title, window.location.pathname);
+                    event.preventDefault();
+                }
+                
+                // NUMBER KEYS 1-5 - Jump to sections
+                if (!visibleModal && event.key >= '1' && event.key <= '5') {
+                    const sections = [
+                        '#home-pg', '#games-pg', '#designs-pg', 
+                        '#literary-pg', '#Resume-pg'
+                    ];
+                    const index = parseInt(event.key) - 1;
+                    if (sections[index]) {
+                        document.querySelector(sections[index]).scrollIntoView({ 
+                            behavior: 'smooth' 
+                        });
+                    }
+                }
+                
+                // C KEY - Open contact form
+                if (!visibleModal && event.key.toLowerCase() === 'c') {
+                    window.location.hash = 'contact-form';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Objects and JSON</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+      //initialize a new object and store it as a variable named customer 
+      const customer = {
+        name: 'Tony', 
+        age: 23,
+        married: false,
+        pets: ['dog','cat','iguana'],
+        siblings: [
+          {
+            name: 'Mary', 
+            age: 32, 
+            married: false,
+          },
+          {
+            name: 'Billy',
+            age: 16,
+            married: true,
+          },
+        ],
+      }
+      console.log(customer.name)
+      // Reassign the value for name property 
+      customer.name = 'Anthony'
+      console.log(customer)
+      // log out specfic value of an array 
+      console.log(customer.pets[2])
+      console.log(customer['pets'][2])
+      customer.pets.push('chicken')
+      // push a element into an array 
+      console.log(customer.pets)
+
+      // Give mary 2 pets. A spider and a snail 
+      customer.siblings[0].pets = ['spider', 'snail']
+      // How would I log how many pets tony has 
+      console.log(customer.pets.length)
+
+
+
+      
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
